@@ -1,0 +1,747 @@
+> sm_A1_IMP
+
+Call:
+lm(formula = IMP_GEZAFLGewicht ~ IMP_gew_totaal + IMP_GEZAFLGeboorteLengte, 
+    data = data_kids_HM)
+
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)              -1.36790    2.12061  -0.645    0.519    
+IMP_gew_totaal           -0.45220    0.40826  -1.108    0.268    
+IMP_GEZAFLGeboorteLengte  0.35452    0.04229   8.383   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 7.079 on 1059 degrees of freedom
+Multiple R-squared:  0.06615,	Adjusted R-squared:  0.06439 
+F-statistic: 37.51 on 2 and 1059 DF,  p-value: < 2.2e-16
+
+> sm_A2_IMP
+
+Call:
+lm(formula = IMP_GEZAFLGewicht ~ IMP_gew_totaal + IMP_HeightRatio, 
+    data = data_kids_HM)
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)      -7.7454     1.9523  -3.967 7.76e-05 ***
+IMP_gew_totaal    1.9375     0.3702   5.234 2.00e-07 ***
+IMP_HeightRatio   8.7773     0.6465  13.576  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.747 on 1059 degrees of freedom
+Multiple R-squared:  0.1518,	Adjusted R-squared:  0.1502 
+F-statistic: 94.76 on 2 and 1059 DF,  p-value: < 2.2e-16
+
+> sm_A3_IMP
+
+Call:
+lm(formula = IMP_GEZAFLGewicht ~ IMP_gew_totaal + IMP_AgeLength, 
+    data = data_kids_HM)
+
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)    7.4361264  1.1922976   6.237 6.44e-10 ***
+IMP_gew_totaal 0.8459487  0.3350615   2.525   0.0117 *  
+IMP_AgeLength  0.0179131  0.0009138  19.604  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.262 on 1059 degrees of freedom
+Multiple R-squared:  0.2693,	Adjusted R-squared:  0.268 
+F-statistic: 195.2 on 2 and 1059 DF,  p-value: < 2.2e-16
+
+> sm_A4_IMP
+
+Call:
+lm(formula = IMP_GEZAFLGewicht ~ IMP_gew_totaal + IMP_HeightRatio + 
+    IMP_AgeLength, data = data_kids_HM)
+ 
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)     2.400758   1.954137   1.229 0.219513    
+IMP_gew_totaal  1.155247   0.346926   3.330 0.000899 ***
+IMP_HeightRatio 2.460957   0.758679   3.244 0.001217 ** 
+IMP_AgeLength   0.015603   0.001155  13.505  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.234 on 1058 degrees of freedom
+Multiple R-squared:  0.2765,	Adjusted R-squared:  0.2745 
+F-statistic: 134.8 on 3 and 1058 DF,  p-value: < 2.2e-16
+
+> sm_A5_IMP
+
+Call:
+lm(formula = IMP_GEZAFLGewicht ~ IMP_gew_totaal + IMP_AgeLength + 
+    IMP_AgeSquared, data = data_kids_HM)
+
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)     6.339986   1.197912   5.293 1.47e-07 ***
+IMP_gew_totaal  0.745987   0.331754   2.249   0.0247 *  
+IMP_AgeLength   0.037823   0.004008   9.438  < 2e-16 ***
+IMP_AgeSquared -0.416885   0.081753  -5.099 4.04e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.189 on 1058 degrees of freedom
+Multiple R-squared:  0.2869,	Adjusted R-squared:  0.2848 
+F-statistic: 141.9 on 3 and 1058 DF,  p-value: < 2.2e-16
+
+> sm_A6_IMP
+
+Call:
+lm(formula = IMP_GEZAFLGewicht ~ IMP_gew_totaal + IMP_AgeLength + 
+    IMP_AgeSquared + Female, data = data_kids_HM)
+
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)     7.227092   1.258435   5.743 1.22e-08 ***
+IMP_gew_totaal  0.616984   0.336001   1.836   0.0666 .  
+IMP_AgeLength   0.037464   0.004003   9.359  < 2e-16 ***
+IMP_AgeSquared -0.409890   0.081654  -5.020 6.07e-07 ***
+Female         -0.871160   0.385637  -2.259   0.0241 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.177 on 1057 degrees of freedom
+Multiple R-squared:  0.2903,	Adjusted R-squared:  0.2876 
+F-statistic: 108.1 on 4 and 1057 DF,  p-value: < 2.2e-16
+
+> sm_A7_IMP
+
+Call:
+lm(formula = IMP_GEZAFLGewicht ~ IMP_gew_totaal + IMP_HeightRatio + 
+    IMP_AgeLength + IMP_AgeSquared + Female, data = data_kids_HM)
+ 
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)      6.352074   2.122924   2.992  0.00283 ** 
+IMP_gew_totaal   0.682227   0.359473   1.898  0.05799 .  
+IMP_HeightRatio  0.458203   0.895125   0.512  0.60884    
+IMP_AgeLength    0.035752   0.005218   6.852 1.24e-11 ***
+IMP_AgeSquared  -0.383039   0.097075  -3.946 8.48e-05 ***
+Female          -0.863047   0.386097  -2.235  0.02561 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.18 on 1056 degrees of freedom
+Multiple R-squared:  0.2905,	Adjusted R-squared:  0.2871 
+F-statistic: 86.46 on 5 and 1056 DF,  p-value: < 2.2e-16
+
+> sm_B1_IMP
+
+Call:
+lm(formula = IMP_GEZAFLGewicht ~ IMP_gew_totaal + IMP_AgeLength + 
+    IMP_AgeSquared + Female + IMP_GEZVRGDuurZwang, data = data_kids_HM)
+
+
+Coefficients:
+                     Estimate Std. Error t value Pr(>|t|)    
+(Intercept)         10.255905   3.936186   2.606   0.0093 ** 
+IMP_gew_totaal       0.822722   0.420848   1.955   0.0509 .  
+IMP_AgeLength        0.037425   0.004004   9.347  < 2e-16 ***
+IMP_AgeSquared      -0.408057   0.081698  -4.995 6.89e-07 ***
+Female              -0.843622   0.387187  -2.179   0.0296 *  
+IMP_GEZVRGDuurZwang -0.095404   0.117476  -0.812   0.4169    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.178 on 1056 degrees of freedom
+Multiple R-squared:  0.2907,	Adjusted R-squared:  0.2874 
+F-statistic: 86.57 on 5 and 1056 DF,  p-value: < 2.2e-16
+
+> sm_B2_IMP
+
+Call:
+lm(formula = IMP_GEZAFLGewicht ~ IMP_gew_totaal + IMP_AgeLength + 
+    IMP_AgeSquared + Female + IMP_GEZVRGDuurZwang + as.factor(IMP_Premature_preg), 
+    data = data_kids_HM)
+
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                    11.861895   5.118064   2.318   0.0207 *  
+IMP_gew_totaal                  0.798386   0.423904   1.883   0.0599 .  
+IMP_AgeLength                   0.037421   0.004005   9.343  < 2e-16 ***
+IMP_AgeSquared                 -0.408217   0.081728  -4.995 6.89e-07 ***
+Female                         -0.843343   0.387326  -2.177   0.0297 *  
+IMP_GEZVRGDuurZwang            -0.133242   0.140515  -0.948   0.3432    
+as.factor(IMP_Premature_preg)1 -0.544399   1.108308  -0.491   0.6234    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.181 on 1055 degrees of freedom
+Multiple R-squared:  0.2909,	Adjusted R-squared:  0.2869 
+F-statistic: 72.13 on 6 and 1055 DF,  p-value: < 2.2e-16
+
+> sm_C1_IMP
+
+Call:
+lm(formula = IMP_GEZAFLGewicht ~ IMP_gew_totaal + IMP_AgeLength + 
+    IMP_AgeSquared + Female + IMP_GEZVRGDuurZwang + as.factor(IMP_Premature_preg) + 
+    westers_MOEDER, data = data_kids_HM) 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                    11.827652   5.124645   2.308   0.0212 *  
+IMP_gew_totaal                  0.791862   0.425946   1.859   0.0633 .  
+IMP_AgeLength                   0.037411   0.004008   9.335  < 2e-16 ***
+IMP_AgeSquared                 -0.407989   0.081778  -4.989  7.1e-07 ***
+Female                         -0.845793   0.387790  -2.181   0.0294 *  
+IMP_GEZVRGDuurZwang            -0.133714   0.140609  -0.951   0.3418    
+as.factor(IMP_Premature_preg)1 -0.547832   1.109016  -0.494   0.6214    
+westers_MOEDER                  0.089982   0.546344   0.165   0.8692    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.183 on 1054 degrees of freedom
+Multiple R-squared:  0.2909,	Adjusted R-squared:  0.2862 
+F-statistic: 61.77 on 7 and 1054 DF,  p-value: < 2.2e-16
+
+> sm_C2_IMP
+
+Call:
+lm(formula = IMP_GEZAFLGewicht ~ IMP_gew_totaal + IMP_AgeLength + 
+    IMP_AgeSquared + Female + IMP_GEZVRGDuurZwang + as.factor(IMP_Premature_preg) + 
+    as.factor(westers_MOEDER) + as.factor(IMP_SOI2006NIVEAU1_MOEDER) + 
+    IMP_INHP100HGEST_MOEDER, data = data_kids_HM)
+
+
+Coefficients:
+                                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                           11.107624   5.297301   2.097   0.0362 *  
+IMP_gew_totaal                         0.821105   0.426898   1.923   0.0547 .  
+IMP_AgeLength                          0.037177   0.004015   9.259  < 2e-16 ***
+IMP_AgeSquared                        -0.403471   0.081938  -4.924 9.84e-07 ***
+Female                                -0.819988   0.388293  -2.112   0.0349 *  
+IMP_GEZVRGDuurZwang                   -0.107006   0.141254  -0.758   0.4489    
+as.factor(IMP_Premature_preg)1        -0.360627   1.111001  -0.325   0.7456    
+as.factor(westers_MOEDER)1             0.397276   0.586193   0.678   0.4981    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)2  0.371140   1.945761   0.191   0.8488    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)3  0.493458   1.589152   0.311   0.7562    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)4 -0.591122   1.484143  -0.398   0.6905    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)5 -1.229029   1.524172  -0.806   0.4202    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)6 -1.632815   1.570602  -1.040   0.2988    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)7 -1.388713   1.972856  -0.704   0.4816    
+IMP_INHP100HGEST_MOEDER                0.003198   0.008957   0.357   0.7212    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.179 on 1047 degrees of freedom
+Multiple R-squared:  0.2966,	Adjusted R-squared:  0.2872 
+F-statistic: 31.54 on 14 and 1047 DF,  p-value: < 2.2e-16
+
+> sm_C3_IMP
+
+Call:
+lm(formula = IMP_GEZAFLGewicht ~ IMP_gew_totaal + IMP_AgeLength + 
+    IMP_AgeSquared + Female + IMP_GEZVRGDuurZwang + as.factor(IMP_Premature_preg) + 
+    as.factor(westers_MOEDER) + as.factor(IMP_SOI2006NIVEAU1_MOEDER) + 
+    IMP_INHP100HGEST_MOEDER + as.factor(IMP_fam_structure), data = data_kids_HM)
+
+
+Coefficients:
+                                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                           11.989300   5.302757   2.261   0.0240 *  
+IMP_gew_totaal                         0.861203   0.426506   2.019   0.0437 *  
+IMP_AgeLength                          0.036733   0.004013   9.153  < 2e-16 ***
+IMP_AgeSquared                        -0.396412   0.081851  -4.843 1.47e-06 ***
+Female                                -0.786882   0.387874  -2.029   0.0427 *  
+IMP_GEZVRGDuurZwang                   -0.100890   0.141023  -0.715   0.4745    
+as.factor(IMP_Premature_preg)1        -0.326815   1.109074  -0.295   0.7683    
+as.factor(westers_MOEDER)1             0.572821   0.590531   0.970   0.3323    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)2  0.354730   1.942213   0.183   0.8551    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)3  0.379425   1.587089   0.239   0.8111    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)4 -0.656898   1.481728  -0.443   0.6576    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)5 -1.287656   1.521615  -0.846   0.3976    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)6 -1.701184   1.568034  -1.085   0.2782    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)7 -1.435680   1.969360  -0.729   0.4662    
+IMP_INHP100HGEST_MOEDER                0.006451   0.009062   0.712   0.4767    
+as.factor(IMP_fam_structure)1         -1.617275   0.734830  -2.201   0.0280 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.168 on 1046 degrees of freedom
+Multiple R-squared:  0.2999,	Adjusted R-squared:  0.2898 
+F-statistic: 29.87 on 15 and 1046 DF,  p-value: < 2.2e-16
+
+> sm_D1_IMP
+
+Call:
+lm(formula = IMP_GEZAFLGewicht ~ IMP_gew_totaal + IMP_AgeLength + 
+    IMP_AgeSquared + Female + IMP_GEZVRGDuurZwang + as.factor(IMP_Premature_preg) + 
+    as.factor(westers_MOEDER) + as.factor(IMP_SOI2006NIVEAU1_MOEDER) + 
+    IMP_INHP100HGEST_MOEDER + as.factor(IMP_fam_structure) + 
+    IMP_GEZVRGConsultatiebureau, data = data_kids_HM)
+
+
+Coefficients:
+                                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                            7.960994   5.227459   1.523   0.1281    
+IMP_gew_totaal                         0.794340   0.417818   1.901   0.0576 .  
+IMP_AgeLength                          0.048702   0.004312  11.295  < 2e-16 ***
+IMP_AgeSquared                        -0.559872   0.083739  -6.686 3.73e-11 ***
+Female                                -0.755872   0.379895  -1.990   0.0469 *  
+IMP_GEZVRGDuurZwang                   -0.103432   0.138112  -0.749   0.4541    
+as.factor(IMP_Premature_preg)1        -0.363767   1.086191  -0.335   0.7378    
+as.factor(westers_MOEDER)1             0.737891   0.578856   1.275   0.2027    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)2  0.262127   1.902166   0.138   0.8904    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)3  0.911259   1.556320   0.586   0.5583    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)4  0.038249   1.454787   0.026   0.9790    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)5 -0.353383   1.496615  -0.236   0.8134    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)6 -0.837158   1.540988  -0.543   0.5871    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)7 -0.058721   1.939461  -0.030   0.9759    
+IMP_INHP100HGEST_MOEDER                0.005519   0.008876   0.622   0.5342    
+as.factor(IMP_fam_structure)1         -1.461621   0.720029  -2.030   0.0426 *  
+IMP_GEZVRGConsultatiebureau            0.636994   0.094368   6.750 2.44e-11 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.04 on 1045 degrees of freedom
+Multiple R-squared:  0.3291,	Adjusted R-squared:  0.3189 
+F-statistic: 32.04 on 16 and 1045 DF,  p-value: < 2.2e-16
+
+> sm_D2_IMP
+
+Call:
+lm(formula = IMP_GEZAFLGewicht ~ IMP_gew_totaal + IMP_AgeLength + 
+    IMP_AgeSquared + Female + IMP_GEZVRGDuurZwang + as.factor(IMP_Premature_preg) + 
+    as.factor(westers_MOEDER) + as.factor(IMP_SOI2006NIVEAU1_MOEDER) + 
+    IMP_INHP100HGEST_MOEDER + as.factor(IMP_fam_structure) + 
+    IMP_GEZVRGConsultatiebureau + as.factor(IMP_GEZVRGRokenEersteVerzorger), 
+    data = data_kids_HM)
+
+
+Coefficients:
+                                            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                 8.035051   5.229655   1.536   0.1247    
+IMP_gew_totaal                              0.780520   0.418351   1.866   0.0624 .  
+IMP_AgeLength                               0.048696   0.004313  11.291  < 2e-16 ***
+IMP_AgeSquared                             -0.560903   0.083770  -6.696 3.50e-11 ***
+Female                                     -0.771544   0.380599  -2.027   0.0429 *  
+IMP_GEZVRGDuurZwang                        -0.100812   0.138191  -0.730   0.4659    
+as.factor(IMP_Premature_preg)1             -0.341695   1.086868  -0.314   0.7533    
+as.factor(westers_MOEDER)1                  0.772860   0.581004   1.330   0.1837    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)2       0.283101   1.902821   0.149   0.8818    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)3       0.915298   1.556685   0.588   0.5567    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)4       0.044255   1.455143   0.030   0.9757    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)5      -0.396537   1.498146  -0.265   0.7913    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)6      -0.883843   1.542691  -0.573   0.5668    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)7      -0.097336   1.940638  -0.050   0.9600    
+IMP_INHP100HGEST_MOEDER                     0.005212   0.008888   0.586   0.5577    
+as.factor(IMP_fam_structure)1              -1.482611   0.720778  -2.057   0.0399 *  
+IMP_GEZVRGConsultatiebureau                 0.632993   0.094551   6.695 3.52e-11 ***
+as.factor(IMP_GEZVRGRokenEersteVerzorger)1 -0.327698   0.453142  -0.723   0.4697    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.042 on 1044 degrees of freedom
+Multiple R-squared:  0.3295,	Adjusted R-squared:  0.3185 
+F-statistic: 30.17 on 17 and 1044 DF,  p-value: < 2.2e-16
+
+> sm_E1_IMP
+
+Call:
+lm(formula = IMP_GEZAFLGewicht ~ IMP_gew_totaal + IMP_AgeLength + 
+    IMP_AgeSquared + Female + IMP_GEZVRGDuurZwang + as.factor(IMP_Premature_preg) + 
+    as.factor(westers_MOEDER) + as.factor(IMP_SOI2006NIVEAU1_MOEDER) + 
+    IMP_INHP100HGEST_MOEDER + as.factor(IMP_fam_structure) + 
+    IMP_GEZVRGConsultatiebureau + as.factor(seshoog), data = data_kids_HM)
+
+
+Coefficients:
+                                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                            8.054020   5.230490   1.540   0.1239    
+IMP_gew_totaal                         0.818508   0.419379   1.952   0.0512 .  
+IMP_AgeLength                          0.048636   0.004314  11.274  < 2e-16 ***
+IMP_AgeSquared                        -0.558680   0.083778  -6.669 4.18e-11 ***
+Female                                -0.759222   0.380020  -1.998   0.0460 *  
+IMP_GEZVRGDuurZwang                   -0.104521   0.138155  -0.757   0.4495    
+as.factor(IMP_Premature_preg)1        -0.347185   1.086726  -0.319   0.7494    
+as.factor(westers_MOEDER)1             0.789252   0.583737   1.352   0.1766    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)2  0.232661   1.903117   0.122   0.9027    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)3  0.971708   1.559156   0.623   0.5333    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)4  0.088141   1.456935   0.060   0.9518    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)5 -0.285320   1.500215  -0.190   0.8492    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)6 -0.759305   1.545472  -0.491   0.6233    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)7 -0.010544   1.941193  -0.005   0.9957    
+IMP_INHP100HGEST_MOEDER                0.006019   0.008907   0.676   0.4994    
+as.factor(IMP_fam_structure)1         -1.428066   0.721838  -1.978   0.0481 *  
+IMP_GEZVRGConsultatiebureau            0.636100   0.094400   6.738 2.64e-11 ***
+as.factor(seshoog)1                   -0.349094   0.504406  -0.692   0.4890    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.042 on 1044 degrees of freedom
+Multiple R-squared:  0.3294,	Adjusted R-squared:  0.3185 
+F-statistic: 30.17 on 17 and 1044 DF,  p-value: < 2.2e-16
+
+> sm_E2_IMP
+
+Call:
+lm(formula = IMP_GEZAFLGewicht ~ IMP_gew_totaal + IMP_AgeLength + 
+    IMP_AgeSquared + Female + IMP_GEZVRGDuurZwang + as.factor(IMP_Premature_preg) + 
+    as.factor(westers_MOEDER) + as.factor(IMP_SOI2006NIVEAU1_MOEDER) + 
+    IMP_INHP100HGEST_MOEDER + as.factor(IMP_fam_structure) + 
+    IMP_GEZVRGConsultatiebureau + as.factor(seshoog) + as.factor(UrbanityIndex), 
+    data = data_kids_HM)
+
+
+Coefficients:
+                                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                            8.322151   5.230681   1.591   0.1119    
+IMP_gew_totaal                         0.850257   0.419205   2.028   0.0428 *  
+IMP_AgeLength                          0.048745   0.004312  11.305  < 2e-16 ***
+IMP_AgeSquared                        -0.561687   0.083824  -6.701 3.39e-11 ***
+Female                                -0.726387   0.380443  -1.909   0.0565 .  
+IMP_GEZVRGDuurZwang                   -0.116550   0.138419  -0.842   0.4000    
+as.factor(IMP_Premature_preg)1        -0.323429   1.090486  -0.297   0.7668    
+as.factor(westers_MOEDER)1             0.818318   0.601375   1.361   0.1739    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)2  0.217105   1.901548   0.114   0.9091    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)3  0.915842   1.558245   0.588   0.5568    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)4  0.065447   1.457185   0.045   0.9642    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)5 -0.316208   1.500238  -0.211   0.8331    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)6 -0.771984   1.545796  -0.499   0.6176    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)7 -0.024483   1.939356  -0.013   0.9899    
+IMP_INHP100HGEST_MOEDER                0.005335   0.008914   0.599   0.5496    
+as.factor(IMP_fam_structure)1         -1.421237   0.723529  -1.964   0.0498 *  
+IMP_GEZVRGConsultatiebureau            0.634453   0.094557   6.710 3.20e-11 ***
+as.factor(seshoog)1                   -0.415377   0.506700  -0.820   0.4125    
+as.factor(UrbanityIndex)2              0.154549   0.527646   0.293   0.7697    
+as.factor(UrbanityIndex)3              1.190579   0.612473   1.944   0.0522 .  
+as.factor(UrbanityIndex)4             -0.266003   0.578568  -0.460   0.6458    
+as.factor(UrbanityIndex)5             -0.183634   0.792458  -0.232   0.8168    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.034 on 1040 degrees of freedom
+Multiple R-squared:  0.3338,	Adjusted R-squared:  0.3203 
+F-statistic: 24.81 on 21 and 1040 DF,  p-value: < 2.2e-16
+
+> sm_F_IMP
+
+Call:
+lm(formula = IMP_GEZAFLGewicht ~ IMP_gew_totaal + IMP_AgeLength + 
+    IMP_AgeSquared + Female + IMP_GEZVRGDuurZwang + as.factor(IMP_Premature_preg) + 
+    as.factor(westers_MOEDER) + as.factor(IMP_SOI2006NIVEAU1_MOEDER) + 
+    IMP_INHP100HGEST_MOEDER + as.factor(IMP_fam_structure) + 
+    IMP_GEZVRGConsultatiebureau + as.factor(seshoog) + as.factor(UrbanityIndex) + 
+    as.factor(IMP_GEZPUBGroente5Dagen) + as.factor(IMP_GEZPUBFruit5Dagen), 
+    data = data_kids_HM)
+
+
+
+Coefficients:
+                                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                            7.547435   5.266484   1.433   0.1521    
+IMP_gew_totaal                         0.810683   0.418622   1.937   0.0531 .  
+IMP_AgeLength                          0.048541   0.004323  11.228  < 2e-16 ***
+IMP_AgeSquared                        -0.556856   0.083836  -6.642 4.98e-11 ***
+Female                                -0.716090   0.379772  -1.886   0.0596 .  
+IMP_GEZVRGDuurZwang                   -0.109390   0.138492  -0.790   0.4298    
+as.factor(IMP_Premature_preg)1        -0.330496   1.091331  -0.303   0.7621    
+as.factor(westers_MOEDER)1             0.776632   0.600839   1.293   0.1964    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)2  0.241290   1.898887   0.127   0.8989    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)3  0.829545   1.555418   0.533   0.5939    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)4 -0.096854   1.456342  -0.067   0.9470    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)5 -0.582145   1.502263  -0.388   0.6985    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)6 -1.116115   1.550613  -0.720   0.4718    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)7 -0.431304   1.944911  -0.222   0.8245    
+IMP_INHP100HGEST_MOEDER                0.005655   0.008898   0.636   0.5252    
+as.factor(IMP_fam_structure)1         -1.447612   0.722204  -2.004   0.0453 *  
+IMP_GEZVRGConsultatiebureau            0.625343   0.094428   6.622 5.66e-11 ***
+as.factor(seshoog)1                   -0.338062   0.507400  -0.666   0.5054    
+as.factor(UrbanityIndex)2              0.210896   0.527134   0.400   0.6892    
+as.factor(UrbanityIndex)3              1.202252   0.611283   1.967   0.0495 *  
+as.factor(UrbanityIndex)4             -0.199848   0.578209  -0.346   0.7297    
+as.factor(UrbanityIndex)5             -0.186823   0.791020  -0.236   0.8133    
+as.factor(IMP_GEZPUBGroente5Dagen)1    0.397855   0.451083   0.882   0.3780    
+as.factor(IMP_GEZPUBFruit5Dagen)1      0.873986   0.383842   2.277   0.0230 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.021 on 1038 degrees of freedom
+Multiple R-squared:  0.3378,	Adjusted R-squared:  0.3231 
+F-statistic: 23.02 on 23 and 1038 DF,  p-value: < 2.2e-16
+
+> sm_G1_IMP
+
+Call:
+lm(formula = IMP_GEZAFLGewicht ~ IMP_AgeLength + Female + as.factor(westers_MOEDER) + 
+    as.factor(IMP_SOI2006NIVEAU1_MOEDER) + IMP_INHP100HGEST_MOEDER + 
+    as.factor(IMP_fam_structure) + IMP_GEZVRGConsultatiebureau + 
+    as.factor(seshoog) + as.factor(UrbanityIndex) + IMP_GEZVRGMinutenFietsenKind + 
+    IMP_GEZVRGSchoolMinutenFietsenKind, data = data_kids_HM)
+
+
+
+Coefficients:
+                                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                            9.887845   1.729487   5.717 1.41e-08 ***
+IMP_AgeLength                          0.020512   0.001100  18.640  < 2e-16 ***
+Female                                -1.028822   0.381104  -2.700  0.00706 ** 
+as.factor(westers_MOEDER)1             1.033619   0.613801   1.684  0.09249 .  
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)2 -0.810649   1.938400  -0.418  0.67588    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)3  0.221328   1.589240   0.139  0.88927    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)4 -0.675112   1.487480  -0.454  0.65002    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)5 -1.192929   1.530783  -0.779  0.43598    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)6 -1.738512   1.577599  -1.102  0.27072    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)7 -1.269008   1.978888  -0.641  0.52149    
+IMP_INHP100HGEST_MOEDER                0.006481   0.009110   0.711  0.47702    
+as.factor(IMP_fam_structure)1         -1.522333   0.738532  -2.061  0.03952 *  
+IMP_GEZVRGConsultatiebureau            0.429022   0.094524   4.539 6.32e-06 ***
+as.factor(seshoog)1                   -0.410817   0.516667  -0.795  0.42672    
+as.factor(UrbanityIndex)2             -0.045707   0.536651  -0.085  0.93214    
+as.factor(UrbanityIndex)3              1.018876   0.625605   1.629  0.10369    
+as.factor(UrbanityIndex)4             -0.404638   0.591066  -0.685  0.49376    
+as.factor(UrbanityIndex)5             -0.212291   0.808837  -0.262  0.79301    
+IMP_GEZVRGMinutenFietsenKind           0.018703   0.014315   1.307  0.19167    
+IMP_GEZVRGSchoolMinutenFietsenKind     0.009520   0.022122   0.430  0.66704    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.17 on 1042 degrees of freedom
+Multiple R-squared:  0.302,	Adjusted R-squared:  0.2893 
+F-statistic: 23.73 on 19 and 1042 DF,  p-value: < 2.2e-16
+
+> sm_G2_IMP
+
+Call:
+lm(formula = IMP_GEZAFLGewicht ~ IMP_AgeLength + +Female + as.factor(westers_MOEDER) + 
+    as.factor(IMP_SOI2006NIVEAU1_MOEDER) + IMP_INHP100HGEST_MOEDER + 
+    as.factor(IMP_fam_structure) + IMP_GEZVRGConsultatiebureau + 
+    as.factor(seshoog) + as.factor(UrbanityIndex) + IMP_GEZVRGMinutenFietsenKind + 
+    IMP_GEZVRGSchoolMinutenFietsenKind + IMP_GEZVRGSchoolMinutenBuitenSpelen + 
+    as.factor(IMP_GEZPUBAbonnementSport) + as.factor(IMP_GEZPUBLidmaatschapSport), 
+    data = data_kids_HM)
+
+
+Coefficients:
+                                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                              9.955652   1.733738   5.742 1.23e-08 ***
+IMP_AgeLength                            0.020424   0.001111  18.384  < 2e-16 ***
+Female                                  -1.006538   0.380575  -2.645   0.0083 ** 
+as.factor(westers_MOEDER)1               0.975757   0.613322   1.591   0.1119    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)2   -0.736667   1.935826  -0.381   0.7036    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)3    0.303662   1.588013   0.191   0.8484    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)4   -0.559816   1.486690  -0.377   0.7066    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)5   -1.039931   1.532784  -0.678   0.4976    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)6   -1.618508   1.576899  -1.026   0.3049    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)7   -1.132471   1.983164  -0.571   0.5681    
+IMP_INHP100HGEST_MOEDER                  0.003416   0.009264   0.369   0.7124    
+as.factor(IMP_fam_structure)1           -1.301529   0.745892  -1.745   0.0813 .  
+IMP_GEZVRGConsultatiebureau              0.442509   0.096016   4.609 4.56e-06 ***
+as.factor(seshoog)1                     -0.403389   0.515850  -0.782   0.4344    
+as.factor(UrbanityIndex)2               -0.031078   0.536648  -0.058   0.9538    
+as.factor(UrbanityIndex)3                1.107009   0.625565   1.770   0.0771 .  
+as.factor(UrbanityIndex)4               -0.399085   0.590412  -0.676   0.4992    
+as.factor(UrbanityIndex)5               -0.202426   0.807488  -0.251   0.8021    
+IMP_GEZVRGMinutenFietsenKind             0.016664   0.014374   1.159   0.2466    
+IMP_GEZVRGSchoolMinutenFietsenKind       0.010958   0.022093   0.496   0.6200    
+IMP_GEZVRGSchoolMinutenBuitenSpelen     -0.018672   0.011675  -1.599   0.1101    
+as.factor(IMP_GEZPUBAbonnementSport)1    1.245652   0.653225   1.907   0.0568 .  
+as.factor(IMP_GEZPUBLidmaatschapSport)1 -0.123452   0.516243  -0.239   0.8110    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.16 on 1039 degrees of freedom
+Multiple R-squared:  0.3063,	Adjusted R-squared:  0.2916 
+F-statistic: 20.86 on 22 and 1039 DF,  p-value: < 2.2e-16
+
+> sm_H1_IMP
+
+Call:
+lm(formula = IMP_GEZAFLGewicht ~ IMP_AgeLength + IMP_AgeSquared + 
+    Female + as.factor(IMP_HealthStatus) + as.factor(IMP_Loneliness) + 
+    as.factor(IMP_Satisfaction), data = data_kids_HM)
+
+
+Coefficients:
+                              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                  12.710950   4.483896   2.835  0.00467 ** 
+IMP_AgeLength                 0.037436   0.004025   9.300  < 2e-16 ***
+IMP_AgeSquared               -0.408005   0.082042  -4.973 7.69e-07 ***
+Female                       -0.939877   0.381536  -2.463  0.01392 *  
+as.factor(IMP_HealthStatus)0 -0.761938   1.302143  -0.585  0.55858    
+as.factor(IMP_HealthStatus)1 -0.038206   1.280502  -0.030  0.97620    
+as.factor(IMP_HealthStatus)2 -0.414537   1.280933  -0.324  0.74629    
+as.factor(IMP_Loneliness)0    1.266413   3.001916   0.422  0.67321    
+as.factor(IMP_Loneliness)1   -0.762282   2.830837  -0.269  0.78777    
+as.factor(IMP_Loneliness)2   -1.278094   2.805651  -0.456  0.64881    
+as.factor(IMP_Satisfaction)0 -1.228367   3.401125  -0.361  0.71805    
+as.factor(IMP_Satisfaction)1 -1.590480   3.215749  -0.495  0.62099    
+as.factor(IMP_Satisfaction)2 -2.447805   3.233964  -0.757  0.44928    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.165 on 1049 degrees of freedom
+Multiple R-squared:  0.2985,	Adjusted R-squared:  0.2904 
+F-statistic: 37.19 on 12 and 1049 DF,  p-value: < 2.2e-16
+
+> sm_H2_IMP
+
+Call:
+lm(formula = IMP_GEZAFLGewicht ~ IMP_AgeLength + Female + as.factor(IMP_Premature_preg) + 
+    as.factor(westers_MOEDER) + as.factor(IMP_SOI2006NIVEAU1_MOEDER) + 
+    IMP_INHP100HGEST_MOEDER + as.factor(IMP_fam_structure) + 
+    IMP_GEZVRGConsultatiebureau + as.factor(seshoog) + as.factor(UrbanityIndex) + 
+    as.factor(IMP_HealthStatus) + as.factor(IMP_Loneliness) + 
+    as.factor(IMP_Satisfaction), data = data_kids_HM)
+
+
+Coefficients:
+                                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                           14.050457   4.744485   2.961  0.00313 ** 
+IMP_AgeLength                          0.020815   0.001091  19.086  < 2e-16 ***
+Female                                -0.946665   0.381769  -2.480  0.01331 *  
+as.factor(IMP_Premature_preg)1        -0.616484   0.817385  -0.754  0.45089    
+as.factor(westers_MOEDER)1             1.045792   0.613564   1.704  0.08860 .  
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)2 -0.616792   1.930811  -0.319  0.74945    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)3  0.036683   1.585713   0.023  0.98155    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)4 -0.778707   1.480185  -0.526  0.59894    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)5 -1.418292   1.524364  -0.930  0.35237    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)6 -1.981420   1.571299  -1.261  0.20759    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)7 -1.285801   1.970343  -0.653  0.51417    
+IMP_INHP100HGEST_MOEDER                0.007913   0.009217   0.859  0.39081    
+as.factor(IMP_fam_structure)1         -1.419240   0.744433  -1.906  0.05687 .  
+IMP_GEZVRGConsultatiebureau            0.474677   0.092998   5.104 3.95e-07 ***
+as.factor(seshoog)1                   -0.363414   0.514085  -0.707  0.47978    
+as.factor(UrbanityIndex)2             -0.077835   0.536539  -0.145  0.88469    
+as.factor(UrbanityIndex)3              1.022410   0.624560   1.637  0.10193    
+as.factor(UrbanityIndex)4             -0.404765   0.591085  -0.685  0.49363    
+as.factor(UrbanityIndex)5             -0.363410   0.807576  -0.450  0.65280    
+as.factor(IMP_HealthStatus)0          -0.138555   1.302393  -0.106  0.91530    
+as.factor(IMP_HealthStatus)1           0.400859   1.282786   0.312  0.75473    
+as.factor(IMP_HealthStatus)2           0.401998   1.283396   0.313  0.75417    
+as.factor(IMP_Loneliness)0             0.847881   3.020220   0.281  0.77897    
+as.factor(IMP_Loneliness)1            -1.194856   2.850783  -0.419  0.67521    
+as.factor(IMP_Loneliness)2            -2.182897   2.825157  -0.773  0.43990    
+as.factor(IMP_Satisfaction)0          -1.602265   3.431071  -0.467  0.64061    
+as.factor(IMP_Satisfaction)1          -1.920829   3.251708  -0.591  0.55484    
+as.factor(IMP_Satisfaction)2          -2.843468   3.269066  -0.870  0.38461    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.138 on 1034 degrees of freedom
+Multiple R-squared:  0.3146,	Adjusted R-squared:  0.2967 
+F-statistic: 17.58 on 27 and 1034 DF,  p-value: < 2.2e-16
+
+> sm_H3_IMP
+
+Call:
+lm(formula = IMP_GEZAFLGewicht ~ IMP_AgeLength + Female + as.factor(IMP_Premature_preg) + 
+    as.factor(westers_MOEDER) + as.factor(IMP_SOI2006NIVEAU1_MOEDER) + 
+    IMP_INHP100HGEST_MOEDER + as.factor(IMP_fam_structure) + 
+    IMP_GEZVRGConsultatiebureau + as.factor(seshoog) + as.factor(UrbanityIndex) + 
+    as.factor(IMP_HealthStatus) + as.factor(IMP_Loneliness) + 
+    as.factor(IMP_Satisfaction) + as.factor(IMP_Friendships) + 
+    as.factor(IMP_Upset) + as.factor(IMP_Nervous), data = data_kids_HM)
+
+
+
+Coefficients:
+                                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                           15.883552   5.715138   2.779  0.00555 ** 
+IMP_AgeLength                          0.020667   0.001216  16.996  < 2e-16 ***
+Female                                -0.895760   0.382648  -2.341  0.01943 *  
+as.factor(IMP_Premature_preg)1        -0.959151   0.824707  -1.163  0.24509    
+as.factor(westers_MOEDER)1             0.871753   0.617822   1.411  0.15855    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)2 -0.757968   1.941170  -0.390  0.69627    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)3 -0.094370   1.587298  -0.059  0.95260    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)4 -0.881339   1.484824  -0.594  0.55293    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)5 -1.572760   1.528421  -1.029  0.30372    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)6 -2.148695   1.579174  -1.361  0.17392    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)7 -1.367673   1.972848  -0.693  0.48831    
+IMP_INHP100HGEST_MOEDER                0.007076   0.009298   0.761  0.44684    
+as.factor(IMP_fam_structure)1         -1.394894   0.748823  -1.863  0.06278 .  
+IMP_GEZVRGConsultatiebureau            0.531706   0.099518   5.343 1.13e-07 ***
+as.factor(seshoog)1                   -0.428429   0.514944  -0.832  0.40561    
+as.factor(UrbanityIndex)2             -0.109175   0.537321  -0.203  0.83903    
+as.factor(UrbanityIndex)3              1.046054   0.624981   1.674  0.09449 .  
+as.factor(UrbanityIndex)4             -0.380265   0.591825  -0.643  0.52067    
+as.factor(UrbanityIndex)5             -0.243777   0.809062  -0.301  0.76324    
+as.factor(IMP_HealthStatus)0           0.078644   1.304238   0.060  0.95193    
+as.factor(IMP_HealthStatus)1           0.466850   1.282934   0.364  0.71601    
+as.factor(IMP_HealthStatus)2           0.441422   1.283520   0.344  0.73098    
+as.factor(IMP_Loneliness)0             1.291983   3.074362   0.420  0.67439    
+as.factor(IMP_Loneliness)1            -0.713385   2.913946  -0.245  0.80665    
+as.factor(IMP_Loneliness)2            -1.663970   2.881706  -0.577  0.56378    
+as.factor(IMP_Satisfaction)0          -1.724884   3.436267  -0.502  0.61580    
+as.factor(IMP_Satisfaction)1          -2.189225   3.264812  -0.671  0.50266    
+as.factor(IMP_Satisfaction)2          -3.543986   3.296319  -1.075  0.28257    
+as.factor(IMP_Friendships)1            0.052028   0.749842   0.069  0.94470    
+as.factor(IMP_Friendships)2            1.119362   0.828674   1.351  0.17706    
+as.factor(IMP_Upset)0                 -0.263262   2.008129  -0.131  0.89572    
+as.factor(IMP_Upset)1                 -0.037793   2.013057  -0.019  0.98502    
+as.factor(IMP_Upset)2                 -0.906261   2.039003  -0.444  0.65680    
+as.factor(IMP_Nervous)0               -1.358543   2.898238  -0.469  0.63935    
+as.factor(IMP_Nervous)1               -1.457213   2.882692  -0.506  0.61331    
+as.factor(IMP_Nervous)2               -2.091769   2.876988  -0.727  0.46735    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.13 on 1026 degrees of freedom
+Multiple R-squared:  0.3217,	Adjusted R-squared:  0.2986 
+F-statistic: 13.91 on 35 and 1026 DF,  p-value: < 2.2e-16
+
+> sm_H4_IMP
+
+Call:
+lm(formula = IMP_GEZAFLGewicht ~ IMP_AgeLength + +Female + as.factor(IMP_Premature_preg) + 
+    as.factor(westers_MOEDER) + as.factor(IMP_SOI2006NIVEAU1_MOEDER) + 
+    IMP_INHP100HGEST_MOEDER + as.factor(IMP_fam_structure) + 
+    IMP_GEZVRGConsultatiebureau + as.factor(IMP_GEZVRGRokenEersteVerzorger) + 
+    as.factor(IMP_HealthStatus) + as.factor(IMP_Loneliness) + 
+    as.factor(IMP_Satisfaction) + as.factor(IMP_Friendships) + 
+    as.factor(IMP_Upset) + as.factor(IMP_Nervous), data = data_kids_HM)
+
+
+Coefficients:
+                                            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                15.988191   5.711767   2.799  0.00522 ** 
+IMP_AgeLength                               0.020611   0.001211  17.015  < 2e-16 ***
+Female                                     -0.928042   0.382288  -2.428  0.01537 *  
+as.factor(IMP_Premature_preg)1             -0.995722   0.825075  -1.207  0.22778    
+as.factor(westers_MOEDER)1                  0.801175   0.595898   1.344  0.17909    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)2      -0.696779   1.942740  -0.359  0.71992    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)3      -0.101410   1.585747  -0.064  0.94902    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)4      -0.923546   1.482743  -0.623  0.53351    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)5      -1.675723   1.526281  -1.098  0.27250    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)6      -2.252923   1.575903  -1.430  0.15313    
+as.factor(IMP_SOI2006NIVEAU1_MOEDER)7      -1.452429   1.974025  -0.736  0.46204    
+IMP_INHP100HGEST_MOEDER                     0.006896   0.009265   0.744  0.45689    
+as.factor(IMP_fam_structure)1              -1.475212   0.745389  -1.979  0.04807 *  
+IMP_GEZVRGConsultatiebureau                 0.525568   0.099355   5.290  1.5e-07 ***
+as.factor(IMP_GEZVRGRokenEersteVerzorger)1 -0.348734   0.470114  -0.742  0.45837    
+as.factor(IMP_HealthStatus)0               -0.055361   1.303952  -0.042  0.96614    
+as.factor(IMP_HealthStatus)1                0.425112   1.282256   0.332  0.74031    
+as.factor(IMP_HealthStatus)2                0.371158   1.282531   0.289  0.77234    
+as.factor(IMP_Loneliness)0                  1.363047   3.073846   0.443  0.65755    
+as.factor(IMP_Loneliness)1                 -0.745317   2.914575  -0.256  0.79822    
+as.factor(IMP_Loneliness)2                 -1.629325   2.880199  -0.566  0.57172    
+as.factor(IMP_Satisfaction)0               -1.546335   3.434915  -0.450  0.65267    
+as.factor(IMP_Satisfaction)1               -1.999996   3.263408  -0.613  0.54011    
+as.factor(IMP_Satisfaction)2               -3.347961   3.295918  -1.016  0.30997    
+as.factor(IMP_Friendships)1                -0.028271   0.750758  -0.038  0.96997    
+as.factor(IMP_Friendships)2                 1.014364   0.828556   1.224  0.22114    
+as.factor(IMP_Upset)0                      -0.459715   2.006708  -0.229  0.81885    
+as.factor(IMP_Upset)1                      -0.224883   2.012805  -0.112  0.91106    
+as.factor(IMP_Upset)2                      -1.079315   2.040349  -0.529  0.59693    
+as.factor(IMP_Nervous)0                    -1.376231   2.897143  -0.475  0.63487    
+as.factor(IMP_Nervous)1                    -1.367063   2.881775  -0.474  0.63533    
+as.factor(IMP_Nervous)2                    -2.043089   2.879074  -0.710  0.47809    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.136 on 1030 degrees of freedom
+Multiple R-squared:  0.3177,	Adjusted R-squared:  0.2972 
+F-statistic: 15.47 on 31 and 1030 DF,  p-value: < 2.2e-16
